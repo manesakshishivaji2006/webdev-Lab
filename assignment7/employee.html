@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender {
+            width: auto;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <p> name : sakshi shivaji mane</p>
+    <p>roll no : 2</p>
+
+<div class="container">
+    <h2>Employee Registration</h2>
+    <form>
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob">
+
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="male" class="gender"> Male
+        <input type="radio" name="gender" value="female" class="gender"> Female
+        <input type="radio" name="gender" value="other" class="gender"> Other
+        <br><br>
+
+        <label>Department</label>
+        <select name="department">
+            <option>HR</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="3"></textarea>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" name="confirm_password" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
